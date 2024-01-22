@@ -22,7 +22,7 @@ def scanport(addresstoscan, portnumber):
 def theportscanner():
     if request.method == 'POST':
         address = request.json.get('address')  
-        ports = [11 , 20 , 21 , 22 , 23 , 24 , 27 , 29 , 31 , 35 , 39 , 48 , 49 , 50 , 53 , 56 , 57 , 59 , 65 , 66 , 67 , 69 , 71 , 72 , 74 , 75 , 80 , 93 , 115 , 110 , 143 , 443 , 8080]
+        ports = [11 , 20 , 21 , 22 , 23 , 24 , 27 , 29 , 31 , 35 , 39 , 48 , 49 , 50 , 53 , 56 , 57 , 59 , 65 , 66 , 67 , 69 , 71 , 72 , 74 , 75 , 80 , 93 , 115 , 110 , 143 , 443 , 8080 , 3306]
         results = []
 
         for port in ports:
